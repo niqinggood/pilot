@@ -4,16 +4,18 @@
 ## 🛠️ 环境准备
 需先安装 Python 依赖：
 ```bash
-pip install saddle*.whl
+pip install saddle*.whl```
 
 
 📂 目录结构
 pilot 是一款轻量级MLOps，采用前后端分离架构：
+```bash
 pilot/
 ├── go_backend.exe    # 后端主程序
 ├── build/            # 前端编译文件
 │   └── config.json   # 前端配置文件
 └── config/           # 系统配置目录
+```
 前端采用react,后台采用go，
 🚀 快速启动
 
@@ -21,7 +23,7 @@ pilot/
 1. **默认端口启动**  
    直接双击 `go_backend.exe` 或执行：
    ```bash
-   ./go_backend.exe
+   ./go_backend.exe```
 
    默认监听端口：5000
 2.自定义端口
@@ -31,14 +33,15 @@ pilot/
 ## nginx前端部署
 修改 API 地址：
 
-bash
+```bash
 
 ### 编辑 build/config.json
 {
   "apiBaseUrl": "http://实际后台IP:端口" 
 }
+```
 Nginx 配置示例：
-
+```bash
 
 server {
     listen       80;
@@ -48,4 +51,4 @@ server {
         root   /path/to/build;
         index  index.html;
     }
-}
+}```
