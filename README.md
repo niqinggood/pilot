@@ -8,7 +8,7 @@ pip install saddle*.whl
 
 
 📂 目录结构
-#pilot 是一款轻量级MLOps，采用前后端分离架构：
+pilot 是一款轻量级MLOps，采用前后端分离架构：
 pilot/
 ├── go_backend.exe    # 后端主程序
 ├── build/            # 前端编译文件
@@ -28,7 +28,7 @@ pilot/
    ./go_backend.exe -port [端口号]
    ./go_backend.exe -port 5001
 
-##nginx前端部署
+## nginx前端部署
 修改 API 地址：
 
 bash
